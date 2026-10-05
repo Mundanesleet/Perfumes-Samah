@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Encuentra tu perfume: test olfativo | Perfumes Samah</title>
+  <meta name="description" content="Responde 5 preguntas sobre para quién es, familia olfativa, ocasión, intensidad y presupuesto, y descubre fragancias 100% originales del catálogo de Perfumes Samah.">
+  <meta name="theme-color" content="#070c1b">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Perfumes Samah">
+  <meta property="og:locale" content="es_CO">
+  <meta property="og:title" content="Encuentra tu perfume | Perfumes Samah">
+  <meta property="og:description" content="Descubre una fragancia que vaya contigo en menos de 60 segundos.">
+  <meta property="og:image" content="../assets/images/editorial/og-samah.jpg">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/logo/samah-mark-32.png">
+  <link rel="apple-touch-icon" href="../assets/logo/samah-mark-180.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,400,0..1,0&icon_names=add,air,arrow_back,arrow_forward,auto_awesome,celebration,chat,check,check_circle,chevron_right,close,cookie,dark_mode,dashboard_customize,delete,energy_savings_leaf,event,explore,favorite,flight_takeoff,forest,home,info,local_fire_department,local_florist,local_shipping,menu,music_note,nutrition,payments,photo_camera,psychology_alt,redeem,remove,restart_alt,sanitizer,science,search,sell,share,shopping_bag,spa,star,stars,support_agent,tune,verified,verified_user,water_drop,wb_sunny,work,workspace_premium&display=block">
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/pages.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body data-root=".." data-page="quiz">
+  <div id="app-header"></div>
+
+  <main id="main">
+    <section class="quiz-hero">
+      <div class="container">
+        <div class="quiz-hero__row">
+          <div class="quiz-hero__text">
+            <span class="quiz-hero__chip"><span class="quiz-hero__dot"></span>Test olfativo Samah</span>
+            <h1 class="quiz-hero__title">Encuentra tu perfume</h1>
+            <p class="quiz-hero__lead">Cuéntanos qué buscas y descubre fragancias de nicho y de diseñador 100% auténticas que resuenan con tu estilo de vida.</p>
+          </div>
+          <div class="quiz-hero__badge">
+            <span class="quiz-hero__avatars"><span>5</span><span class="icon" aria-hidden="true">star</span></span>
+            <span><strong>5 preguntas</strong><small>Menos de 60 segundos</small></span>
+          </div>
+        </div>
+
+        <div class="quiz-progress" data-progress>
+          <div class="quiz-progress__meta">
+            <span class="quiz-progress__step" data-step-text>Paso 1 de 5 • Para quién</span>
+            <span class="quiz-progress__pct" data-step-pct>20% completado</span>
+          </div>
+          <div class="quiz-progress__track" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="20" aria-label="Progreso del test"><span class="quiz-progress__bar" data-bar style="width:20%"></span></div>
+          <ol class="quiz-progress__pills" data-pills></ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="quiz-body">
+      <div class="container">
+        <form class="quiz-form" data-quiz novalidate></form>
+
+        <div class="quiz-loader" data-loader hidden>
+          <span class="quiz-loader__ring" aria-hidden="true"></span>
+          <h2>Analizando tu perfil olfativo…</h2>
+          <p>Comparando notas, ocasión e intensidad con el catálogo de Perfumes Samah.</p>
+        </div>
+
+        <section class="quiz-results" data-results hidden aria-labelledby="results-title" tabindex="-1">
+          <div class="quiz-results__head">
+            <div>
+              <p class="quiz-results__eyebrow"><span class="icon" aria-hidden="true">verified</span>Selección curada lista</p>
+              <h2 class="quiz-results__title" id="results-title">Estas fragancias podrían gustarte</h2>
+              <p class="quiz-results__lead">Basado en tus respuestas filtramos los perfumes, decants y combos del catálogo con mejor compatibilidad.</p>
+              <p class="quiz-results__summary" data-summary></p>
+            </div>
+            <div class="quiz-results__actions">
+              <button class="btn btn--soft btn--sm" type="button" data-restart><span class="icon" aria-hidden="true">restart_alt</span>Ajustar respuestas</button>
+              <a class="btn btn--dark btn--sm" data-advisor href="#" target="_blank" rel="noopener"><span class="icon" aria-hidden="true">chat</span>Consultar con un asesor</a>
+            </div>
+          </div>
+          <div class="quiz-results__grid" data-results-grid></div>
+
+          <div class="dark-banner quiz-results__banner">
+            <div>
+              <p class="dark-banner__eyebrow"><span class="quiz-results__tag">Sugerencia de nuestro experto</span></p>
+              <h3 class="dark-banner__title">¿Indeciso entre varios? Prueba un combo</h3>
+              <p class="dark-banner__text">Llévate 2 a 4 fragancias seleccionadas en decants para descubrir cuál va mejor con tu piel.</p>
+            </div>
+            <div class="dark-banner__actions">
+              <a class="btn btn--peach" href="combos.html">Ver combos desde <span data-combo-from></span></a>
+              <a class="btn btn--slate" href="https://wa.me/573118935666?text=Hola%20Perfumes%20Samah%2C%20quiero%20personalizar%20un%20combo." target="_blank" rel="noopener">Personalizar combo por chat</a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <div id="app-footer"></div>
+
+  <script src="../js/products.js" defer></script>
+  <script src="../js/main.js" defer></script>
+  <script src="../js/cart.js" defer></script>
+  <script src="../js/components.js" defer></script>
+  <script src="../js/quiz.js" defer></script>
+</body>
+</html>

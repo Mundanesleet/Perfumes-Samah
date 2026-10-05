@@ -1,0 +1,95 @@
+/* ==========================================================================
+   Perfumes Samah — Design tokens
+   Fuente: sistema de diseño "Nocturne & Amber Haute Parfumerie" (Google Stitch)
+   ========================================================================== */
+:root {
+  /* ---- Color: superficies (crema / neutros cálidos) ---- */
+  --surface: #fef8f3;
+  --surface-dim: #ded9d4;
+  --surface-container-lowest: #ffffff;
+  --surface-container-low: #f8f3ee;
+  --surface-container: #f2ede8;
+  --surface-container-high: #ece7e2;
+  --surface-container-highest: #e6e2dd;
+  --ivory-canvas: #fdfbf7;
+  --parchment-subtle: #efe8df;
+
+  /* ---- Color: texto ---- */
+  --on-surface: #1d1b19;
+  --on-surface-variant: #45464d;
+  --ink-charcoal: #1a1d24;
+  --outline: #76767e;
+  --outline-variant: #c6c6ce;
+
+  /* ---- Color: azul oscuro (primario) ---- */
+  --midnight-deep: #070c1b;
+  --primary-container: #131a33;
+  --primary-fixed: #dbe1ff;
+  --on-primary: #ffffff;
+
+  /* ---- Color: café / ámbar (secundario) ---- */
+  --secondary: #835425;
+  --amber-bronze: #733727;
+  --secondary-container: #ffbf87;
+  --on-secondary-container: #7a4b1e;
+  --secondary-fixed: #ffdcc1;
+  --on-secondary-fixed: #2e1500;
+  --tertiary-fixed-dim: #e9c176;
+
+  /* ---- Color: acentos funcionales ---- */
+  --mist-sage: #c6ddd4;
+  --whatsapp: #25d366;          /* Solo para elementos de WhatsApp */
+  --whatsapp-hover: #1fb858;
+  --error: #ba1a1a;
+
+  /* ---- Tipografía ---- */
+  --font-display: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  --font-body: 'Plus Jakarta Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+  /* ---- Radios (escala real usada por Stitch) ---- */
+  --r-sm: 2px;      /* rounded      */
+  --r: 4px;         /* rounded-lg   — botones, inputs */
+  --r-lg: 8px;      /* rounded-xl   — tarjetas */
+  --r-pill: 12px;   /* rounded-full — badges y chips */
+  --r-2xl: 16px;    /* rounded-2xl  — banners destacados */
+  --r-circle: 50%;
+
+  /* ---- Espaciado ---- */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2.5rem;
+  --margin: 1rem;
+  --margin-desktop: 3.5rem;
+  --container: 1360px;
+
+  /* ---- Elevación (sombras suaves) ---- */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+  --shadow-header: 0 1px 8px rgba(0, 0, 0, 0.04);
+  --shadow-fab: 0 4px 16px rgba(7, 12, 27, 0.3);
+
+  /* ---- Movimiento ---- */
+  --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+  --t-fast: 150ms;
+  --t: 300ms;
+  --t-slow: 500ms;
+
+  /* ---- Chrome ---- */
+  --header-h: 82px;     /* móvil: barra 26 + fila 56 */
+  --tabbar-h: 64px;
+  --z-header: 50;
+  --z-fab: 40;
+  --z-drawer: 60;
+  --z-toast: 70;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --header-h: 146px;  /* barra 26 + fila 80 + navegación 40 */
+    --tabbar-h: 0px;
+  }
+}
